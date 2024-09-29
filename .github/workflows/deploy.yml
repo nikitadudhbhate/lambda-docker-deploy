@@ -18,6 +18,7 @@ jobs:
 
       - name: Set up AWS CLI
         run: |
+          mkdir -p ~/.aws  # Create the .aws directory
           echo "[default]" > ~/.aws/config
           echo "region = us-east-1" >> ~/.aws/config  # Specify your AWS region here
           echo "[default]" > ~/.aws/credentials
